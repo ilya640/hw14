@@ -1,0 +1,83 @@
+body, html{
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #003B46;
+}
+.content{
+    width: 90%;
+    margin:  0 auto;
+    padding: 30px;
+    background-color: #07575B;
+}
+
+.video-block{
+    float: left;
+    width: 50%;
+    background-color: #0a848a;
+    margin:  0 auto;
+    position: relative;
+}
+
+.video-block__player {
+    position: relative;
+    width: 90%; /* блок будет растягиваться по ширине родителя */
+    padding-bottom: 56.25%; /* 16:9 соотношение сторон, 9 / 16 = 0.5625, умножаем на 100 = 56.25% */
+    height: 0;
+    overflow: hidden;
+    margin:  20px auto;
+  }
+  
+  .video-block__player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+.video-block__youtube{
+    width: 90%;
+    margin-top: 10px;
+}
+
+.video-block__button{
+    display: block;
+    height: 30px;
+    width: 40%;
+    background-color: #66A5AD;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #003B46;
+    padding-top: 12px ;
+    position: relative;
+   
+    bottom: 10px;
+}
+
+.clear-fix{
+    clear: both;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #01171b;
+}
+
+.video-block__text{
+    margin: 10px auto;
+    width: 90%;
+    color: #003B46;
+    padding-bottom: 10px;
+   
+}
+
+@media (max-width: 768px) {
+    .video-block{
+        float: none;
+        width: 90%;
+        
+    }
+   
+}

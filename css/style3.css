@@ -1,0 +1,79 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-image: url('../image/depositphotos_393215436-stock-photo-background-texture-white-paper-pattern.jpg');
+    background-size: cover;
+}
+
+h1 {
+    width: 60%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.all_icons {
+    color: white;
+    float: left;
+    width: 45px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.content {
+
+    width: 90%;
+    margin: 50px auto;
+    min-width: 390px;
+
+}
+
+.content__item {
+    min-width: 140px;
+    display: block;
+    float: left;
+    width: 23%;
+    margin: 5px 1%;
+    background-color: rgb(76, 76, 76);
+    height: 45px;
+    border-radius: 5px;
+    border-bottom: black solid 2px;
+}
+
+.content__text {
+    padding-left: 5px;
+    font-size: 10px;
+    float: left;
+    height: 45px;
+    width: calc(100% - 50px);
+    background-color: rgb(239, 156, 0);
+    color: white;
+    border-radius: 0 5px 5px 0;
+    border-bottom: rgb(76, 76, 76) solid 2px;
+}
+
+.content__header {
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
+    font-size: 17px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .content__item {
+        width: calc(94% / 3);
+    }
+}
+
+@media (max-width: 600px) {
+    .content__item {
+        width: 48%;
+    }
+}
